@@ -12,4 +12,6 @@ class timer {
         ~timer();//destructor
         timer(timer&)=delete;//copy constructor
         timer(timer&&)=delete;//move contructor
+        timer& operator=(timer&)=delete;//copy assignment operator override
+        timer& operator=(timer&&)=delete;//move assignment operator override
 };
